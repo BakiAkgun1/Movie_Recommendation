@@ -59,7 +59,7 @@ def modal1():
             # Sonuçları Görüntüle
             if not similar_movies.empty:
                 st.write(f"**{selected_movie}** filmi ile benzer öneriler:")
-                st.dataframe(similar_movies[['title','genres','overview','runtime','vote_average','vote_count','cast','director','homepage']].head(10))  # İlk 10 benzer filmi tablo olarak gösterir
+                st.dataframe(similar_movies[['title','genres','runtime','vote_average','vote_count','cast','director','homepage']].head(10))  # İlk 10 benzer filmi tablo olarak gösterir
             else:
                 st.write(f"**{selected_movie}** filmi için benzer film bulunamadı.")
         else:
